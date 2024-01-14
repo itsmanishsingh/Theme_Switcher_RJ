@@ -1,4 +1,4 @@
-import react , {useContext} from "react"
+import React , {useContext} from "react"
 import ThemeContext from "../context/ThemeContext"
 
 const ThemeToggler = ()=>{
@@ -8,7 +8,7 @@ const ThemeToggler = ()=>{
         <div onClick = {()=>{
             setThemeMode(themeMode === "lisght" ? "dark" : "light")
         }}>
-            <span>{themeMode === "light" ? "Turn Off" : "Lights On"}</span>
+            <span>{themeMode === "light" ? "Turn off" : "Lights ON"}</span>
         </div>
     )
 }
