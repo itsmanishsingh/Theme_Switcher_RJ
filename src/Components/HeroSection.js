@@ -1,11 +1,11 @@
 import React , {useContext} from "react"
-import ThemeContext from "../context/ThemeContext"
+import ThemeContext from "../Context/ThemeContext"
 import AppTheme from "../Colors"
 
 const HeroSection = ()=>{
     const theme  = useContext(ThemeContext)[0];
-    const currentTheme = AppTheme[theme];
-
+    const currentTheme = AppTheme[theme];   // Properties of the color from Colors.js
+    
     return (
         <div 
         style={{

@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import ThemeContext from './context/ThemeContext';
+import ThemeContext from './Context/ThemeContext';
 import Header from './Components/Header';
 import HeroSection from './Components/HeroSection';
 import './App.css';
@@ -8,10 +8,10 @@ function App() {
   const themeHook = useState("light");
 
   return (
-    <ThemeContext.Provider value={themeHook}>
+    <ThemeContext.Provider value = {themeHook}>
       <div>
         <Header />
-          <HeroSection />
+        <HeroSection />
       </div>
     </ThemeContext.Provider>
   )

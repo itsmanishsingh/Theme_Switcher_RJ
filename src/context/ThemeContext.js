@@ -1,7 +1,7 @@
-import { createContext } from "react";
+import React , { createContext } from "react";
 
-
-const ThemeContext = createContext(["light" , ()=>{}]);
+// Here in the CreateContext ,we can pass a default value and along with default value we are also passing call back function , its very common
+const ThemeContext = React.createContext(["light" , ()=>{}]);
 
 
 export default ThemeContext;
